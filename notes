@@ -1,0 +1,32 @@
+笔记：
+1.首先在创建项目的时候选择kotlin语言
+2.要想kotlin也用jdk1.8编译，需要添加kotlin相关的编译配置，在app module->build.gradle 中添加
+android {
+    ...
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+3.在app module->build.gradle 中添加
+as版本在4.0之前：
+android {
+    ...
+    dataBinding {
+        enabled = true
+    }
+}
+as版本在4.0之后：
+android {
+    ...
+     buildFeatures {
+        dataBinding = true
+    }
+}
+
+
+
+在Kotlin当中，一个类默认就是不可被继承的，除非我们主动将它声明成open

@@ -1,0 +1,16 @@
+ext {
+    android = [
+        // 应用程序包名
+        applicationId    : "com.example.myapplication",
+        // 用于编译的SDK版本
+        compileSdkVersion: 29,
+        // 用于Gradle编译项目的工具版本
+        buildToolsVersion: "29.0.3",
+        // 最低支持Android版本
+        minSdkVersion    : 21,
+        // 目标版本
+        targetSdkVersion : 29,
+        versionCode      : 1,
+        versionName      : "1.0"
+    ]
+}

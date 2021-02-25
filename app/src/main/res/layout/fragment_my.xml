@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="holder"
+            type="com.example.myapplication.ui.my.MyFragment" />
+
+        <variable
+            name="name"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/fake_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="@color/colorWhite" />
+        <RelativeLayout
+            android:id="@+id/rl_userCenter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:onClick="@{holder::myClick}"
+            android:paddingLeft="@dimen/dp_18"
+            android:paddingRight="@dimen/dp_18">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_56"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_defult_head" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_toRightOf="@id/avatar"
+                android:text="@{name}"
+                android:textColor="@color/colorBlack_85"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorMainBg"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_20">
+
+            <RelativeLayout
+                android:id="@+id/rl_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_18"
+                android:layout_marginRight="@dimen/dp_18"
+                android:background="@drawable/white_radiu6_bg"
+                android:onClick="@{holder::myClick}"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8">
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_toRightOf="@id/iv_setting"
+                    android:text="@string/setting_text"
+                    android:textColor="@color/colorBlack_85"
+                    android:textSize="@dimen/sp_15" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_6"
+                    android:layout_height="@dimen/dp_11"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_arrow_right" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

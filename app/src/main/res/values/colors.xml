@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorWhite</color>
+    <color name="colorPrimaryDark">@color/colorWhite</color>
+    <color name="colorAccent">@color/colorMain</color>
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorTitleBarLine">#19000000</color>
+    <color name="colorMainBg">#F6F6F6</color>
+    <color name="colorMain">#FF6244</color>
+    <color name="colorMain_50">#80FF6244</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack_10">#1A000000</color>
+    <color name="colorBlack_50">#80000000</color>
+    <color name="colorBlack_85">#D8000000</color>
+    <color name="colorBtnLine">#FFDCDEE0</color>
+    <color name="colorGray">#757575</color>
+</resources>
